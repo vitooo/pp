@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/RelativeLayout">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Uvod - SPOZNAVANJE ČRT"
+        android:id="@+id/button"
+        android:enabled="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_marginTop="38dp"
+        android:clickable="true"
+        android:onClick="Uvod"
+        android:textSize="26dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="IGRA - SPOZNAVANJE LIKOV"
+        android:id="@+id/button2"
+        android:enabled="true"
+        android:layout_below="@+id/button"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:onClick="Liki"
+        android:textSize="26dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="IGRA - PODOBNOSTI"
+        android:id="@+id/button3"
+        android:enabled="true"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:textSize="26dp"
+        android:onClick="podobnost"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="IZHOD"
+        android:id="@+id/button4"
+        android:enabled="true"
+        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:textSize="26dp"
+        android:onClick="izhod"/>
+
+</RelativeLayout>
